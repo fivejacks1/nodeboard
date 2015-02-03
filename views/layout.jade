@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    // script(src = 'http://www.livejs.com/live.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block header
+    #header
+      a(href='/')
+        h1= title
+    block content
+    script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src = '/javascripts/postloader.js')

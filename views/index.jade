@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+	#postForm
+		fieldset
+			div(id = 'titleField')
+				input(id = 'newPostTitle', type = 'text', placeholder = 'title')
+			div(id = 'contentField')
+				//- input(id = 'newPostContent', type = 'textarea', placeholder = 'type something!')
+				textarea(id = 'newPostContent', rows = '3', cols = '50', placeholder = 'type something!')
+			button#btnAddPost add!
+
+	#postList
